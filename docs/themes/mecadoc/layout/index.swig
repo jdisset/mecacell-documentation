@@ -6,7 +6,7 @@
     <title>{{config.title + ' - ' + page.title}}</title>
     <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=News+Cycle|Source+Sans+Pro:200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|News+Cycle|Source+Sans+Pro:200" rel="stylesheet">
     <link href='{{ url_for("css/main.css") }}' rel='stylesheet'>
 </head>
 
