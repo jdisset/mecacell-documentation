@@ -1,0 +1,108 @@
+@import "reset";
+
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
+
+$mecaorange: #e89636;
+$mecayellow: #f9db55;
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9em;
+}
+
+#nav-head {
+	font-family: 'News Cycle', sans-serif;
+	padding: 1.4em;
+	margin: 0;
+	height: 1em;
+	background: #303030;
+
+	$menu_margin: 28px;
+
+	li, ul {
+		display: inline;
+		list-style: none;
+	}
+
+	li:first-child {
+		margin-left: -$menu_margin;
+	}
+
+	img {
+		display: inline;
+		float: left;
+		height: 2.5em;
+		width: auto;
+		margin: -10px 0 0 100px;
+	}
+
+	a {
+		margin: 0 $menu_margin;
+		text-decoration: none;
+		color: #CCC;
+
+		@include transition(color 0.3s ease);
+	}
+
+	a:hover {
+		color: $mecayellow;
+	}
+
+	b {
+		color: $mecaorange;
+		font-weight: bold;
+	}
+}
+
+h2 {
+	font-family: 'News Cycle', sans-serif;
+	font-size: 1.3em;
+	text-align: left;
+	color: black;
+	margin: 30px 10px;
+	font-weight: bold;
+	color: $mecaorange;
+}
+
+#home {
+	.home-head {
+		//font-family: 'Source Sans Pro', sans-serif;
+		background: $mecayellow;
+		padding: 60px 0;
+		box-shadow: inset 1px -4px 9px -6px rgba(150, 103, 0, 0.8);
+
+		$w: 22vw;
+
+		img {
+			width: $w;
+			min-width: 150px;
+			margin-left: (100vw - $w) / 2;
+		}
+
+		h1 {
+			font-family: 'Source Sans Pro', sans-serif;
+			font-size: 4.1em;
+			color: $mecaorange;
+			text-transform: uppercase;
+			margin: auto;
+			text-align: center;
+			width: auto;
+			margin-top: -12px;
+		}
+
+		p {
+			font-size: 0.9em;
+			margin: auto;
+			text-align: center;
+			width: $w;
+			color: white;
+			font-weight: bold;
+		}
+	}
+}
